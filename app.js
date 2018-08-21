@@ -20,7 +20,7 @@ process.env['feelingsData'] = JSON.stringify(data);
 
 //initialize the states.json
 const statesFileSpec = path.join(__dirname, 'data') + '/states.json';
-if(! fs.exists(statesFileSpec)){
+if(! fs.existsSync(statesFileSpec)){
     fs.writeFileSync(statesFileSpec, '[]');
 }
 
