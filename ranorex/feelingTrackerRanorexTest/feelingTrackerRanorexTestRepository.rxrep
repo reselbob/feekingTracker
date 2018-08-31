@@ -1,0 +1,89 @@
+﻿<repository
+id="4634972d-89b0-4638-a273-a9d2880d20de"
+name="feelingTrackerRanorexTestRepository"
+rxversion="8.2">
+	<codegen
+	classname="feelingTrackerRanorexTestRepository"
+	namespace="feelingTrackerRanorexTest">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="e8846197-c75c-4087-b572-9608fef3bcf7"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="8873d1a9-a9bc-4256-a175-64db6a019291"
+		isrooted="True"
+		name="FeelingsTrackerVersion12"
+		refpath="/dom[@domain='localhost:3000']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="93a3e91f-8c4f-406f-8d43-1a45254581be"
+			name="TxtUserName"
+			refimgid="56e6ec6d-4fbd-473f-ab04-53ecb86f5f68"
+			refpath="/dom[@domain='localhost:3000']//input[#'txtUserName']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:3000']//input[#'txtUserName']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="745df3dc-5e5d-4935-ab70-3d85af2d73f3"
+			name="TxtPassword"
+			refimgid="01b0af1f-d82f-4edc-874c-f1dad23bd570"
+			refpath="/dom[@domain='localhost:3000']//input[#'txtPassword']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:3000']//input[#'txtPassword']
+			</item>
+			<item
+			addcaps="unknown,webelement,buttontag"
+			capname="buttontag"
+			id="6f28fdc5-620a-4ba8-bb49-cfba0a323f4e"
+			name="Btnlogin"
+			refimgid="40d3ae3b-fdd9-458f-b646-422da2fcdc8e"
+			refpath="/dom[@domain='localhost:3000']//button[#'btnlogin']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:3000']//button[#'btnlogin']
+			</item>
+			<item
+			addcaps="unknown,webelement,divtag"
+			capname="divtag"
+			id="70d5b204-8290-4149-9e1c-b3f879ad7063"
+			name="DivWelcome"
+			refimgid="a08c3835-fe16-47f0-99e8-248220c678b2"
+			refpath="/dom[@domain='localhost:3000']//div[#'divWelcome']"
+			searchtimeout="30000ms">
+				/dom[@domain='localhost:3000']//div[#'divWelcome']
+			</item>
+			<basepath>
+				/dom[@domain='localhost:3000']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>
