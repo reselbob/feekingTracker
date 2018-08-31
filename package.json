@@ -4,7 +4,7 @@
   "description": "A simple REST based web app that can be used demonstration purposes",
   "main": "app.js",
   "scripts": {
-    "test": "find ./test -name '*Tests.js' | xargs mocha -R spec",
+    "test": "mocha test",
     "api-test": "mocha test/apiTests.js",
     "gui-test": "mocha test/guiTests.js"
   },
