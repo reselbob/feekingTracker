@@ -96,10 +96,10 @@ namespace feelingTrackerRanorexTest
             public FeelingsTrackerVersion12AppFolder(RepoGenBaseFolder parentFolder) :
                     base("FeelingsTrackerVersion12", "/dom[@domain='localhost:3000']", parentFolder, 30000, null, false, "8873d1a9-a9bc-4256-a175-64db6a019291", "")
             {
-                _txtusernameInfo = new RepoItemInfo(this, "TxtUserName", ".//input[#'txtUserName']", 30000, null, "93a3e91f-8c4f-406f-8d43-1a45254581be");
-                _txtpasswordInfo = new RepoItemInfo(this, "TxtPassword", ".//input[#'txtPassword']", 30000, null, "745df3dc-5e5d-4935-ab70-3d85af2d73f3");
-                _btnloginInfo = new RepoItemInfo(this, "Btnlogin", ".//button[#'btnlogin']", 30000, null, "6f28fdc5-620a-4ba8-bb49-cfba0a323f4e");
-                _divwelcomeInfo = new RepoItemInfo(this, "DivWelcome", ".//div[#'divWelcome']", 30000, null, "70d5b204-8290-4149-9e1c-b3f879ad7063");
+                _txtusernameInfo = new RepoItemInfo(this, "TxtUserName", ".//input[#'txtUserName'][@visible='true']", 30000, null, "93a3e91f-8c4f-406f-8d43-1a45254581be");
+                _txtpasswordInfo = new RepoItemInfo(this, "TxtPassword", ".//input[#'txtPassword'][@visible='true']", 30000, null, "745df3dc-5e5d-4935-ab70-3d85af2d73f3");
+                _btnloginInfo = new RepoItemInfo(this, "Btnlogin", ".//button[#'btnlogin'][@visible='true']", 30000, null, "6f28fdc5-620a-4ba8-bb49-cfba0a323f4e");
+                _divwelcomeInfo = new RepoItemInfo(this, "DivWelcome", ".//div[#'divWelcome'][@visible='true']", 30000, null, "70d5b204-8290-4149-9e1c-b3f879ad7063");
             }
 
             /// <summary>
