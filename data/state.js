@@ -4,8 +4,10 @@ const fs = require('fs');
 const _ = require('lodash');
 const path = require('path');
 
+const deploydir = __dirname
+
 function getStatesFileSpecSync(){
-    const dir =  process.env.FEELING_TRACKER_DATA_DIR || __dirname;
+    const dir =  process.env.FEELING_TRACKER_DATA_DIR || deploydir;
     return path.join(dir) + '/feelingstates.json';
 }
 
@@ -27,7 +29,7 @@ function writeData(fileName, data) {
 
 module.exports.initSync = function (){
     // set the path to the
-    const datadir = process.env.FEELING_TRACKER_DATA_DIR || __dirname;
+    const datadir = process.env.FEELING_TRACKER_DATA_DIR || deploydir;
     if(!process.env.FEELING_TRACKER_DATA_DIR) process.env.FEELING_TRACKER_DATA_DIR = datadir;
     if(!fs.existsSync(datadir))fs.mkdirSync(datadir);
     const statesFileSpec = path.join(datadir) + '/feelingstates.json';
