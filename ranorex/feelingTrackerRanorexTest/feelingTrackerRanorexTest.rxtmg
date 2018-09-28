@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="8.2">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="feelingTrackerRanorexTest"
+      id="6f455b1f-3593-40c2-8c79-6f05bf376e3c"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="feelingTrackerRanorexTest"
+      id="6f455b1f-3593-40c2-8c79-6f05bf376e3c"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
