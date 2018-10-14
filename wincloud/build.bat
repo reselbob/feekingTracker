@@ -1,0 +1,1 @@
+echo "Access is $GC_ACCESS"
