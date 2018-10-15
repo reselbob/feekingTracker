@@ -1,7 +1,9 @@
 @echo off
 setlocal EnableDelayedExpansion
 echo %1
+timeout 10
 kubectl get service | findstr %1 > temp.txt
+timeout 2
 set /P myservice=<temp.txt
 echo The service return is: %myservice%
 
