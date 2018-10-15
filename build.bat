@@ -1,7 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 echo %1
-echo -- %cd%temp.txt
+echo -- %cd%\temp.txt
 kubectl get service | findstr %1 > %cd%\temp.txt
 set /P myservice=<%cd%\temp.txt
 echo The service return is: %myservice%
