@@ -6,9 +6,6 @@ kubectl get service | findstr %1 > temp.txt
 
 for /f "delims=" %%x in (temp.txt) do set myservice=%%x
 
-type temp.txt
-rem set /P myservice= < temp.txt
-
 del temp.txt
 echo The service return is: %myservice%
 
