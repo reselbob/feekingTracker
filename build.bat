@@ -5,6 +5,7 @@ timeout 10
 kubectl get service | findstr %1 > temp.txt
 timeout 2
 set /P myservice=<temp.txt
+del temp.txt
 echo The service return is: %myservice%
 
 set n=0
