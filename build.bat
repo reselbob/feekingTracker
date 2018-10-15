@@ -1,9 +1,11 @@
 @echo off
 setlocal EnableDelayedExpansion
 echo %1
-echo -- %cd%\temp.txt
-kubectl get service | findstr %1 > %cd%\temp.txt
-set /P myservice= < %cd%\temp.txt
+echo ----
+kubectl get service | findstr %1
+echo ----
+kubectl get service | findstr %1 > C:\Jenkins\temp.txt
+set /P myservice= < C:\Jenkins\temp.txt
 echo The service return is: %myservice%
 
 set n=0
