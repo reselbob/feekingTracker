@@ -1,6 +1,7 @@
 @echo off
 setlocal EnableDelayedExpansion
 echo %1
+echo -- %cd%
 kubectl get service | findstr %1 > temp.txt
 set /P myservice=<temp.txt
 del temp.txt
