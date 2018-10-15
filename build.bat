@@ -1,5 +1,5 @@
 
-setlocal EnableExtensions EnableDelayedExpansion
+rem setlocal EnableExtensions EnableDelayedExpansion
 echo %1
 
 kubectl get service | findstr %1 > temp.txt
