@@ -11,9 +11,8 @@ for /f "delims=" %%x in (temp.txt) do set myservice=%%x
 echo The service return is: %myservice%
 
 set n=0
-for %%a in ( %myservice% ) do (
-  echo %%a
-)
+for %%a in ( %myservice% ) do echo %%a
+ 
 
 
 del temp.txt
