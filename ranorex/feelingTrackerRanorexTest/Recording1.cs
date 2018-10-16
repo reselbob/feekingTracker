@@ -41,6 +41,7 @@ namespace feelingTrackerRanorexTest
         /// </summary>
         public Recording1()
         {
+            testUrl = "http://localhost:3000";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace feelingTrackerRanorexTest
         }
 
 #region Variables
+
+        string _testUrl;
+
+        /// <summary>
+        /// Gets or sets the value of variable testUrl.
+        /// </summary>
+        [TestVariable("0059b765-ce92-4957-a79b-e80f40882230")]
+        public string testUrl
+        {
+            get { return _testUrl; }
+            set { _testUrl = value; }
+        }
 
 #endregion
 
@@ -79,8 +92,8 @@ namespace feelingTrackerRanorexTest
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site 'http://localhost:3000' with browser 'chrome' in normal mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser("http://localhost:3000", "chrome", "", false, false, false, false, false);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $testUrl with browser 'chrome' in normal mode.", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(testUrl, "chrome", "", false, false, false, false, false);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FeelingsTrackerVersion12.TxtUserName' at 116;14.", repo.FeelingsTrackerVersion12.TxtUserNameInfo, new RecordItemIndex(1));
