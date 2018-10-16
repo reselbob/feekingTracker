@@ -27,6 +27,11 @@ rxversion="8.2">
 	namespace="feelingTrackerRanorexTest">
 	</codegen>
 	<variables>
+		<var
+		id="0059b765-ce92-4957-a79b-e80f40882230"
+		name="testUrl">
+			http://localhost:3000
+		</var>
 	</variables>
 	<recorditems>
 		<openwebsiterecorditem
@@ -42,6 +47,10 @@ rxversion="8.2">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="Url"
+				variable="testUrl">
+				</binding>
 			</bindings>
 			<url>
 				http://localhost:3000
