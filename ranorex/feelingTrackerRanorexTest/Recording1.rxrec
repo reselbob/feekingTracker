@@ -28,7 +28,7 @@ rxversion="8.2">
 	</codegen>
 	<variables>
 		<var
-		id="0059b765-ce92-4957-a79b-e80f40882230"
+		id="c0dd3884-42fa-4b17-905e-7c3fe39ee095"
 		name="testUrl">
 			http://localhost:3000
 		</var>
@@ -56,6 +56,23 @@ rxversion="8.2">
 				http://localhost:3000
 			</url>
 		</openwebsiterecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="a6ccfae6-b85c-4140-9545-71996603c84f">
+			<comment>
+				Watches the value of the variable
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="testUrl">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
@@ -1383,7 +1400,7 @@ KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//
 		graceperiod="0ms"
 		method="CloseWindow"
 		optional="False"
-		searchpropertyid="5fb173df-e288-4c8e-b447-3e189f1c5f89">
+		searchpropertyid="2d5abb66-da72-4790-a127-e7c2b37ba7d5">
 			<comment>
 			</comment>
 			<bindings>
