@@ -89,8 +89,8 @@ namespace feelingTrackerRanorexTest
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FeelingsTrackerVersion12'.", repo.FeelingsTrackerVersion12.SelfInfo, new RecordItemIndex(0));
-            Host.Current.CloseApplication(repo.FeelingsTrackerVersion12.Self, new Duration(0));
+            Report.Log(ReportLevel.Info, "Application", "Killing application containing item 'FeelingsTrackerVersion12'.", repo.FeelingsTrackerVersion12.SelfInfo, new RecordItemIndex(0));
+            Host.Current.KillApplication(repo.FeelingsTrackerVersion12.Self);
             Delay.Milliseconds(0);
             
         }
