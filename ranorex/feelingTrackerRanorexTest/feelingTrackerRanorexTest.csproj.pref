@@ -1,0 +1,15 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="feelingTrackerRanorexTest.rxtst" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="feelingTrackerRanorexTest.rxtst" />
+    <Element value="feelingTrackerRanorexTestRepository.rxrep" />
+    <Element value="Recording1.rxrec" />
+    <Element value="closebrowser.rxrec" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Array name="recentusercodeselections" />
+  </Properties>
+</Properties>

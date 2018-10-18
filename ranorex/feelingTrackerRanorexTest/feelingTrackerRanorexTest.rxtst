@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
 rxversion="8.2">
 	<testsuiteentryhierarchy>
@@ -18,6 +18,10 @@ rxversion="8.2">
 					</param>
 				</parameters>
 			</testcase>
+			<teardown
+			id="45509b23-a1b1-4ac5-a042-c7a48e64d79c"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="48e5979b-180b-4aa3-bdea-0783ba5cb61b"
 			name="Recording1"
@@ -46,6 +50,20 @@ rxversion="8.2">
 			reportwriteinterval="30000ms"
 			showinvisiblechars="True">
 			</testsuite>
+			<testmodule
+			id="fb87dae0-1fa4-4db5-872f-a20ba11538c7"
+			name="closebrowser"
+			ref="8bb613bf-c5ef-44f5-97b8-dc95a4508597"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="webAppUrl"
+					datasourceid="2a21861c-9b0a-419f-bd96-e013190ab47b"
+					variableid="084f8e2f-9a4b-45dc-a6b4-838265e66b97"
+					variablename="testUrl">
+					</var>
+				</databinding>
+			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
 			<testsuite
@@ -61,6 +79,14 @@ rxversion="8.2">
 						id="48e5979b-180b-4aa3-bdea-0783ba5cb61b"
 						name="Recording1">
 						</testmodule>
+						<teardown
+						id="45509b23-a1b1-4ac5-a042-c7a48e64d79c"
+						name="teardown">
+							<testmodule
+							id="fb87dae0-1fa4-4db5-872f-a20ba11538c7"
+							name="closebrowser">
+							</testmodule>
+						</teardown>
 					</testcase>
 				</testcase>
 			</testsuite>

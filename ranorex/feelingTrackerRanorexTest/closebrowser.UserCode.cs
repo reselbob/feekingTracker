@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace feelingTrackerRanorexTest
 {
-    public partial class Recording1
+    public partial class closebrowser
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

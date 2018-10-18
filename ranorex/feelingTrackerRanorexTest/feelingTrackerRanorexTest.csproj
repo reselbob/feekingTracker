@@ -117,6 +117,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>3408d5ae-079b-449a-9b18-b2f8a6aa8384</id>
     </Compile>
+    <Compile Include="closebrowser.cs">
+      <BoundTo>fc1f6347-0593-4bdf-8d3e-ee5b4ec6f9ea</BoundTo>
+      <DependentUpon>closebrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1f032937-1ac7-4461-81a7-b19ddd0c5225</id>
+    </Compile>
+    <Compile Include="closebrowser.UserCode.cs">
+      <BoundTo>fc1f6347-0593-4bdf-8d3e-ee5b4ec6f9ea</BoundTo>
+      <DependentUpon>closebrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3e364cbb-e0fd-46ee-81d7-4becd7cf9645</id>
+    </Compile>
     <Compile Include="feelingTrackerRanorexTestRepository.cs">
       <BoundTo>6b5ebdec-6cab-4319-ad12-47c74f39dbbe</BoundTo>
       <DependentUpon>feelingTrackerRanorexTestRepository.rxrep</DependentUpon>
@@ -142,6 +154,11 @@
   <ItemGroup>
     <None Include="app.config">
       <id>ce6bd5c6-292b-4372-8c27-4536e0ea5d9e</id>
+    </None>
+    <None Include="closebrowser.rxrec">
+      <BoundTo>6b5ebdec-6cab-4319-ad12-47c74f39dbbe</BoundTo>
+      <id>fc1f6347-0593-4bdf-8d3e-ee5b4ec6f9ea</id>
+      <recordtableid>8bb613bf-c5ef-44f5-97b8-dc95a4508597</recordtableid>
     </None>
     <None Include="feelingTrackerRanorexTestRepository.rximg">
       <BoundTo>6b5ebdec-6cab-4319-ad12-47c74f39dbbe</BoundTo>
