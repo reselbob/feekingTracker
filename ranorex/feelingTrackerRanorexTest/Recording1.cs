@@ -59,7 +59,7 @@ namespace feelingTrackerRanorexTest
         /// <summary>
         /// Gets or sets the value of variable testUrl.
         /// </summary>
-        [TestVariable("0059b765-ce92-4957-a79b-e80f40882230")]
+        [TestVariable("c0dd3884-42fa-4b17-905e-7c3fe39ee095")]
         public string testUrl
         {
             get { return _testUrl; }
@@ -96,31 +96,34 @@ namespace feelingTrackerRanorexTest
             Host.Current.OpenBrowser(testUrl, "chrome", "", false, false, false, false, false);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FeelingsTrackerVersion12.TxtUserName' at 116;14.", repo.FeelingsTrackerVersion12.TxtUserNameInfo, new RecordItemIndex(1));
+            // Watches the value of the variable
+            Report.Log(ReportLevel.Info, "User", testUrl, new RecordItemIndex(1));
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FeelingsTrackerVersion12.TxtUserName' at 116;14.", repo.FeelingsTrackerVersion12.TxtUserNameInfo, new RecordItemIndex(2));
             repo.FeelingsTrackerVersion12.TxtUserName.Click("116;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'reselbob' with focus on 'FeelingsTrackerVersion12.TxtUserName'.", repo.FeelingsTrackerVersion12.TxtUserNameInfo, new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'reselbob' with focus on 'FeelingsTrackerVersion12.TxtUserName'.", repo.FeelingsTrackerVersion12.TxtUserNameInfo, new RecordItemIndex(3));
             repo.FeelingsTrackerVersion12.TxtUserName.PressKeys("reselbob");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FeelingsTrackerVersion12.TxtPassword' at 148;12.", repo.FeelingsTrackerVersion12.TxtPasswordInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FeelingsTrackerVersion12.TxtPassword' at 148;12.", repo.FeelingsTrackerVersion12.TxtPasswordInfo, new RecordItemIndex(4));
             repo.FeelingsTrackerVersion12.TxtPassword.Click("148;12");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'cheese' with focus on 'FeelingsTrackerVersion12.TxtPassword'.", repo.FeelingsTrackerVersion12.TxtPasswordInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'cheese' with focus on 'FeelingsTrackerVersion12.TxtPassword'.", repo.FeelingsTrackerVersion12.TxtPasswordInfo, new RecordItemIndex(5));
             repo.FeelingsTrackerVersion12.TxtPassword.PressKeys("cheese");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FeelingsTrackerVersion12.Btnlogin' at 32;16.", repo.FeelingsTrackerVersion12.BtnloginInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FeelingsTrackerVersion12.Btnlogin' at 32;16.", repo.FeelingsTrackerVersion12.BtnloginInfo, new RecordItemIndex(6));
             repo.FeelingsTrackerVersion12.Btnlogin.Click("32;16");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Welcome reselbob') on item 'FeelingsTrackerVersion12.DivWelcome'.", repo.FeelingsTrackerVersion12.DivWelcomeInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Welcome reselbob') on item 'FeelingsTrackerVersion12.DivWelcome'.", repo.FeelingsTrackerVersion12.DivWelcomeInfo, new RecordItemIndex(7));
             Validate.AttributeEqual(repo.FeelingsTrackerVersion12.DivWelcomeInfo, "InnerText", "Welcome reselbob");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FeelingsTrackerVersion12'.", repo.FeelingsTrackerVersion12.SelfInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'FeelingsTrackerVersion12'.", repo.FeelingsTrackerVersion12.SelfInfo, new RecordItemIndex(8));
             Host.Current.CloseApplication(repo.FeelingsTrackerVersion12.Self, new Duration(0));
             Delay.Milliseconds(0);
             
