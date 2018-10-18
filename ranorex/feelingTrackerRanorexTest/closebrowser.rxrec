@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="8bb613bf-c5ef-44f5-97b8-dc95a4508597"
+mode="Desktop"
+rxversion="8.2">
+	<name>
+		closebrowser
+	</name>
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="closebrowser"
+	namespace="feelingTrackerRanorexTest">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="5fb173df-e288-4c8e-b447-3e189f1c5f89">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8873d1a9-a9bc-4256-a175-64db6a019291"
+			sourcename="ItemRecorderEditor">
+				<path>
+					/dom[@domain='localhost:3000']
+				</path>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="4634972d-89b0-4638-a273-a9d2880d20de"
+	name="feelingTrackerRanorexTestRepository"
+	relativepath="feelingTrackerRanorexTestRepository.rxrep"
+	rxversion="8.2">
+		<codegen
+		classname="feelingTrackerRanorexTestRepository"
+		namespace="feelingTrackerRanorexTest">
+		</codegen>
+		<rootfolder
+		id="e8846197-c75c-4087-b572-9608fef3bcf7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		closebrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
