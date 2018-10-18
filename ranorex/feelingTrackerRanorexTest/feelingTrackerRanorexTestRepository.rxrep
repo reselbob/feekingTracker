@@ -1,4 +1,4 @@
-﻿<repository
+<repository
 id="4634972d-89b0-4638-a273-a9d2880d20de"
 name="feelingTrackerRanorexTestRepository"
 rxversion="8.2">
@@ -19,7 +19,6 @@ rxversion="8.2">
 		id="8873d1a9-a9bc-4256-a175-64db6a019291"
 		isrooted="True"
 		name="FeelingsTrackerVersion12"
-		refpath="/dom[@domain='localhost:3000']"
 		searchtimeout="30000ms"
 		usecache="False">
 			<item
@@ -29,7 +28,7 @@ rxversion="8.2">
 			name="TxtUserName"
 			refimgid="56e6ec6d-4fbd-473f-ab04-53ecb86f5f68"
 			searchtimeout="30000ms">
-				/dom[@domain='localhost:3000']//input[#'txtUserName'][@visible='true']
+				/dom[@domain=$testUrl]//input[#'txtUserName'][@visible='true']
 			</item>
 			<item
 			addcaps="unknown,webelement,inputtag"
@@ -38,7 +37,7 @@ rxversion="8.2">
 			name="TxtPassword"
 			refimgid="01b0af1f-d82f-4edc-874c-f1dad23bd570"
 			searchtimeout="30000ms">
-				/dom[@domain='localhost:3000']//input[#'txtPassword'][@visible='true']
+				/dom[@domain=$testUrl]//input[#'txtPassword'][@visible='true']
 			</item>
 			<item
 			addcaps="unknown,webelement,buttontag"
@@ -47,7 +46,7 @@ rxversion="8.2">
 			name="Btnlogin"
 			refimgid="40d3ae3b-fdd9-458f-b646-422da2fcdc8e"
 			searchtimeout="30000ms">
-				/dom[@domain='localhost:3000']//button[#'btnlogin'][@visible='true']
+				/dom[@domain=$testUrl]//button[#'btnlogin'][@visible='true']
 			</item>
 			<item
 			addcaps="unknown,webelement,divtag"
@@ -56,10 +55,10 @@ rxversion="8.2">
 			name="DivWelcome"
 			refimgid="a08c3835-fe16-47f0-99e8-248220c678b2"
 			searchtimeout="30000ms">
-				/dom[@domain='localhost:3000']//div[#'divWelcome'][@visible='true']
+				/dom[@domain=$testUrl]//div[#'divWelcome'][@visible='true']
 			</item>
 			<basepath>
-				/dom[@domain='localhost:3000']
+				/dom[@domain=$testUrl]
 			</basepath>
 			<icon>
 				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
@@ -81,5 +80,10 @@ F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
 		</basepath>
 	</rootfolder>
 	<variables>
+		<var
+		id="084f8e2f-9a4b-45dc-a6b4-838265e66b97"
+		name="testUrl">
+			http://localhost:3000
+		</var>
 	</variables>
 </repository>
