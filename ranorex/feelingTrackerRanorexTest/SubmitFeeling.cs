@@ -24,22 +24,22 @@ namespace feelingTrackerRanorexTest
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The SubmitFeeling recording.
     /// </summary>
     [TestModule("38b5cd2b-943a-424c-a014-07c24ac5d899", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    public partial class SubmitFeeling : ITestModule
     {
         /// <summary>
         /// Holds an instance of the feelingTrackerRanorexTestRepository repository.
         /// </summary>
         public static feelingTrackerRanorexTestRepository repo = feelingTrackerRanorexTestRepository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static SubmitFeeling instance = new SubmitFeeling();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public SubmitFeeling()
         {
             testUrl = "http://localhost:3000";
         }
@@ -47,7 +47,7 @@ namespace feelingTrackerRanorexTest
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static SubmitFeeling Instance
         {
             get { return instance; }
         }
@@ -69,7 +69,7 @@ namespace feelingTrackerRanorexTest
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -81,7 +81,7 @@ namespace feelingTrackerRanorexTest
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -90,34 +90,27 @@ namespace feelingTrackerRanorexTest
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $testUrl with browser 'chrome' in normal mode.", new RecordItemIndex(0));
-            Host.Current.OpenBrowser(testUrl, "chrome", "", false, false, false, false, false);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FeelingsTrackerVersion12.TxtUserName' at 116;14.", repo.FeelingsTrackerVersion12.TxtUserNameInfo, new RecordItemIndex(0));
+            repo.FeelingsTrackerVersion12.TxtUserName.Click("116;14", 200);
             Delay.Milliseconds(0);
             
-            // watching the env var value
-            Report.Log(ReportLevel.Info, "User", testUrl, new RecordItemIndex(1));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FeelingsTrackerVersion12.TxtUserName' at 116;14.", repo.FeelingsTrackerVersion12.TxtUserNameInfo, new RecordItemIndex(2));
-            repo.FeelingsTrackerVersion12.TxtUserName.Click("116;14");
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'reselbob' with focus on 'FeelingsTrackerVersion12.TxtUserName'.", repo.FeelingsTrackerVersion12.TxtUserNameInfo, new RecordItemIndex(3));
-            repo.FeelingsTrackerVersion12.TxtUserName.PressKeys("reselbob");
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'reselbob{Escape}' with focus on 'FeelingsTrackerVersion12.TxtUserName'.", repo.FeelingsTrackerVersion12.TxtUserNameInfo, new RecordItemIndex(1));
+            repo.FeelingsTrackerVersion12.TxtUserName.PressKeys("reselbob{Escape}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FeelingsTrackerVersion12.TxtPassword' at 148;12.", repo.FeelingsTrackerVersion12.TxtPasswordInfo, new RecordItemIndex(4));
-            repo.FeelingsTrackerVersion12.TxtPassword.Click("148;12");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FeelingsTrackerVersion12.TxtPassword' at 148;12.", repo.FeelingsTrackerVersion12.TxtPasswordInfo, new RecordItemIndex(2));
+            repo.FeelingsTrackerVersion12.TxtPassword.Click("148;12", 200);
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'cheese' with focus on 'FeelingsTrackerVersion12.TxtPassword'.", repo.FeelingsTrackerVersion12.TxtPasswordInfo, new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'cheese' with focus on 'FeelingsTrackerVersion12.TxtPassword'.", repo.FeelingsTrackerVersion12.TxtPasswordInfo, new RecordItemIndex(3));
             repo.FeelingsTrackerVersion12.TxtPassword.PressKeys("cheese");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FeelingsTrackerVersion12.Btnlogin' at 32;16.", repo.FeelingsTrackerVersion12.BtnloginInfo, new RecordItemIndex(6));
-            repo.FeelingsTrackerVersion12.Btnlogin.Click("32;16");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'FeelingsTrackerVersion12.Btnlogin' at 32;16.", repo.FeelingsTrackerVersion12.BtnloginInfo, new RecordItemIndex(4));
+            repo.FeelingsTrackerVersion12.Btnlogin.Click("32;16", 200);
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Welcome reselbob') on item 'FeelingsTrackerVersion12.DivWelcome'.", repo.FeelingsTrackerVersion12.DivWelcomeInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='Welcome reselbob') on item 'FeelingsTrackerVersion12.DivWelcome'.", repo.FeelingsTrackerVersion12.DivWelcomeInfo, new RecordItemIndex(5));
             Validate.AttributeEqual(repo.FeelingsTrackerVersion12.DivWelcomeInfo, "InnerText", "Welcome reselbob");
             Delay.Milliseconds(100);
             

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <testsuitedoc
-rxversion="8.2">
+rxversion="8.3">
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
 			<testcase
@@ -18,13 +18,17 @@ rxversion="8.2">
 					</param>
 				</parameters>
 			</testcase>
+			<setup
+			id="2bd3593e-d864-4c1b-9dd4-b3f5864534d5"
+			name="setup">
+			</setup>
 			<teardown
 			id="45509b23-a1b1-4ac5-a042-c7a48e64d79c"
 			name="teardown">
 			</teardown>
 			<testmodule
 			id="48e5979b-180b-4aa3-bdea-0783ba5cb61b"
-			name="Recording1"
+			name="SubmitFeeling"
 			ref="38b5cd2b-943a-424c-a014-07c24ac5d899"
 			type="Recording">
 				<databinding>
@@ -32,6 +36,20 @@ rxversion="8.2">
 					dataname="webAppUrl"
 					datasourceid="2a21861c-9b0a-419f-bd96-e013190ab47b"
 					variableid="0059b765-ce92-4957-a79b-e80f40882230"
+					variablename="testUrl">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="7499304b-9ee6-459a-ae17-833c54ddacda"
+			name="OpenBrowser"
+			ref="c488e4b9-fbfe-4a7d-9fb6-689151db42e1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="webAppUrl"
+					datasourceid="2a21861c-9b0a-419f-bd96-e013190ab47b"
+					variableid="f085fe73-b44e-4ec9-bba7-55e32f110aec"
 					variablename="testUrl">
 					</var>
 				</databinding>
@@ -52,7 +70,7 @@ rxversion="8.2">
 			</testsuite>
 			<testmodule
 			id="fb87dae0-1fa4-4db5-872f-a20ba11538c7"
-			name="closebrowser"
+			name="CloseBrowser"
 			ref="8bb613bf-c5ef-44f5-97b8-dc95a4508597"
 			type="Recording">
 				<databinding>
@@ -75,16 +93,24 @@ rxversion="8.2">
 					<testcase
 					id="209ea875-f887-470c-9b4e-0dab4d627a2d"
 					name="TestCase">
+						<setup
+						id="2bd3593e-d864-4c1b-9dd4-b3f5864534d5"
+						name="setup">
+							<testmodule
+							id="7499304b-9ee6-459a-ae17-833c54ddacda"
+							name="OpenBrowser">
+							</testmodule>
+						</setup>
 						<testmodule
 						id="48e5979b-180b-4aa3-bdea-0783ba5cb61b"
-						name="Recording1">
+						name="SubmitFeeling">
 						</testmodule>
 						<teardown
 						id="45509b23-a1b1-4ac5-a042-c7a48e64d79c"
 						name="teardown">
 							<testmodule
 							id="fb87dae0-1fa4-4db5-872f-a20ba11538c7"
-							name="closebrowser">
+							name="CloseBrowser">
 							</testmodule>
 						</teardown>
 					</testcase>

@@ -3,9 +3,9 @@
 embeddedrepository="False"
 id="38b5cd2b-943a-424c-a014-07c24ac5d899"
 mode="Desktop"
-rxversion="8.2">
+rxversion="8.3">
 	<name>
-		Recording1
+		SubmitFeeling
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="8.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Recording1"
+	classname="SubmitFeeling"
 	namespace="feelingTrackerRanorexTest">
 	</codegen>
 	<variables>
@@ -34,52 +34,13 @@ rxversion="8.2">
 		</var>
 	</variables>
 	<recorditems>
-		<openwebsiterecorditem
-		args=""
-		browser="chrome"
-		clearcache="False"
-		clearcookies="False"
-		enabled="True"
-		incognito="False"
-		killexisting="False"
-		maximized="False"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-				<binding
-				target="Url"
-				variable="testUrl">
-				</binding>
-			</bindings>
-			<url>
-				http://localhost:3000
-			</url>
-		</openwebsiterecorditem>
-		<loggingrecorditem
-		category="User"
-		enabled="True"
-		message=""
-		optional="False"
-		reportlevel="Info;20"
-		searchpropertyid="5eeeabe1-249e-4dc1-9b04-6ff3d5d5e00d">
-			<comment>
-				watching the env var value
-			</comment>
-			<bindings>
-				<binding
-				target="Message"
-				variable="testUrl">
-				</binding>
-			</bindings>
-		</loggingrecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
+		duration="200ms"
 		enabled="True"
 		loc="116;14"
-		movetime="300ms"
+		movetime="200ms"
 		optional="False"
 		searchpropertyid="834182a9-d9d9-42ea-a208-be261250d866"
 		sx="487"
@@ -304,7 +265,7 @@ UUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=
 			</helperscreenshot>
 		</mouseitem>
 		<keysequenceitem
-		KeySequence="reselbob"
+		KeySequence="reselbob{Escape}"
 		duration="100ms"
 		enabled="True"
 		optional="False"
@@ -526,10 +487,10 @@ ACiiigAooooA/9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
+		duration="200ms"
 		enabled="True"
 		loc="148;12"
-		movetime="300ms"
+		movetime="200ms"
 		optional="False"
 		searchpropertyid="435f4a28-5fdc-4caa-b9c0-bc166e84d39a"
 		sx="511"
@@ -959,10 +920,10 @@ ACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
+		duration="200ms"
 		enabled="True"
 		loc="32;16"
-		movetime="300ms"
+		movetime="200ms"
 		optional="False"
 		searchpropertyid="17feaf0b-8a61-4220-acf2-4c27e585edee"
 		sx="318"
@@ -1400,7 +1361,7 @@ KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//
 	id="4634972d-89b0-4638-a273-a9d2880d20de"
 	name="feelingTrackerRanorexTestRepository"
 	relativepath="feelingTrackerRanorexTestRepository.rxrep"
-	rxversion="8.2">
+	rxversion="8.3">
 		<codegen
 		classname="feelingTrackerRanorexTestRepository"
 		namespace="feelingTrackerRanorexTest">
@@ -1412,7 +1373,7 @@ KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Recording1.UserCode.cs
+		SubmitFeeling.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

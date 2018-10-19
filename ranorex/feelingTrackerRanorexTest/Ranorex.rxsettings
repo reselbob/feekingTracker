@@ -1,5 +1,5 @@
 ﻿<configuration
-rxversion="8.2">
+rxversion="8.3">
 	<adapter.defaultsearchtimeout>
 		10000ms
 	</adapter.defaultsearchtimeout>
@@ -15,6 +15,9 @@ rxversion="8.2">
 	<imaging.usehiddenimagecapture>
 		True
 	</imaging.usehiddenimagecapture>
+	<input.enableimehookkey>
+		False
+	</input.enableimehookkey>
 	<pointer.checkisvalidlocation>
 		True
 	</pointer.checkisvalidlocation>
@@ -393,6 +396,9 @@ rxversion="8.2">
 	<TestCase.Retry.ShowWarning>
 		True
 	</TestCase.Retry.ShowWarning>
+	<Testing.Data.ExcelDataLoadingPreference>
+		PreferExcel
+	</Testing.Data.ExcelDataLoadingPreference>
 	<TestExecution.CopyRuntimeToOutput>
 		False
 	</TestExecution.CopyRuntimeToOutput>
@@ -427,6 +433,12 @@ rxversion="8.2">
 	<plugins.web.EnableEmbeddedWebDocuments>
 		True
 	</plugins.web.EnableEmbeddedWebDocuments>
+	<plugins.web.EnableJsAcceleration>
+		False
+	</plugins.web.EnableJsAcceleration>
+	<plugins.web.EnableIeAddon>
+		True
+	</plugins.web.EnableIeAddon>
 	<plugins.wpfnative.enablewpfdebug>
 		False
 	</plugins.wpfnative.enablewpfdebug>
