@@ -22,7 +22,7 @@ namespace feelingTrackerRanorexTest
     /// <summary>
     /// The class representing the feelingTrackerRanorexTestRepository element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
     [RepositoryFolder("e8846197-c75c-4087-b572-9608fef3bcf7")]
     public partial class feelingTrackerRanorexTestRepository : RepoGenBaseFolder
     {
@@ -88,7 +88,7 @@ namespace feelingTrackerRanorexTest
     /// <summary>
     /// Inner folder classes.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
     public partial class feelingTrackerRanorexTestRepositoryFolders
     {
         /// <summary>

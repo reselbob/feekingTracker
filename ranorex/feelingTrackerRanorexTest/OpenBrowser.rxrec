@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="8bb613bf-c5ef-44f5-97b8-dc95a4508597"
+id="c488e4b9-fbfe-4a7d-9fb6-689151db42e1"
 mode="Desktop"
-rxversion="8.2">
+rxversion="8.3">
 	<name>
-		closebrowser
+		OpenBrowser
 	</name>
 	<repeatcount>
 		1
@@ -23,36 +23,63 @@ rxversion="8.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="closebrowser"
+	classname="OpenBrowser"
 	namespace="feelingTrackerRanorexTest">
 	</codegen>
 	<variables>
+		<var
+		id="f085fe73-b44e-4ec9-bba7-55e32f110aec"
+		name="testUrl">
+			http://localhost:3000
+		</var>
 	</variables>
 	<recorditems>
-		<closeapprecorditem
+		<openwebsiterecorditem
+		args=""
+		browser="chrome"
+		clearcache="False"
+		clearcookies="False"
 		enabled="True"
-		graceperiod="0ms"
-		method="KillProcess"
-		optional="False"
-		searchpropertyid="5fb173df-e288-4c8e-b447-3e189f1c5f89">
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="False"
+		optional="False">
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="Url"
+				variable="testUrl">
+				</binding>
 			</bindings>
-			<info
-			id="8873d1a9-a9bc-4256-a175-64db6a019291"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain='localhost:3000']
-				</path>
-			</info>
-		</closeapprecorditem>
+			<url>
+				http://localhost:3000
+			</url>
+		</openwebsiterecorditem>
+		<loggingrecorditem
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Info;20"
+		searchpropertyid="5eeeabe1-249e-4dc1-9b04-6ff3d5d5e00d">
+			<comment>
+				watching the env var value
+			</comment>
+			<bindings>
+				<binding
+				target="Message"
+				variable="testUrl">
+				</binding>
+			</bindings>
+		</loggingrecorditem>
 	</recorditems>
 	<repository
 	id="4634972d-89b0-4638-a273-a9d2880d20de"
 	name="feelingTrackerRanorexTestRepository"
 	relativepath="feelingTrackerRanorexTestRepository.rxrep"
-	rxversion="8.2">
+	rxversion="8.3">
 		<codegen
 		classname="feelingTrackerRanorexTestRepository"
 		namespace="feelingTrackerRanorexTest">
@@ -64,7 +91,7 @@ rxversion="8.2">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		closebrowser.UserCode.cs
+		OpenBrowser.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

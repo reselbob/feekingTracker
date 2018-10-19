@@ -24,29 +24,30 @@ namespace feelingTrackerRanorexTest
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The closebrowser recording.
+    ///The OpenBrowser recording.
     /// </summary>
-    [TestModule("8bb613bf-c5ef-44f5-97b8-dc95a4508597", ModuleType.Recording, 1)]
-    public partial class closebrowser : ITestModule
+    [TestModule("c488e4b9-fbfe-4a7d-9fb6-689151db42e1", ModuleType.Recording, 1)]
+    public partial class OpenBrowser : ITestModule
     {
         /// <summary>
         /// Holds an instance of the feelingTrackerRanorexTestRepository repository.
         /// </summary>
         public static feelingTrackerRanorexTestRepository repo = feelingTrackerRanorexTestRepository.Instance;
 
-        static closebrowser instance = new closebrowser();
+        static OpenBrowser instance = new OpenBrowser();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public closebrowser()
+        public OpenBrowser()
         {
+            testUrl = "http://localhost:3000";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static closebrowser Instance
+        public static OpenBrowser Instance
         {
             get { return instance; }
         }
@@ -56,7 +57,7 @@ namespace feelingTrackerRanorexTest
         /// <summary>
         /// Gets or sets the value of variable testUrl.
         /// </summary>
-        [TestVariable("084f8e2f-9a4b-45dc-a6b4-838265e66b97")]
+        [TestVariable("f085fe73-b44e-4ec9-bba7-55e32f110aec")]
         public string testUrl
         {
             get { return repo.testUrl; }
@@ -68,7 +69,7 @@ namespace feelingTrackerRanorexTest
         /// <summary>
         /// Starts the replay of the static recording <see cref="Instance"/>.
         /// </summary>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
         public static void Start()
         {
             TestModuleRunner.Run(Instance);
@@ -80,7 +81,7 @@ namespace feelingTrackerRanorexTest
         /// <remarks>You should not call this method directly, instead pass the module
         /// instance to the <see cref="TestModuleRunner.Run(ITestModule)"/> method
         /// that will in turn invoke this method.</remarks>
-        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
+        [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
@@ -89,9 +90,12 @@ namespace feelingTrackerRanorexTest
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Killing application containing item 'FeelingsTrackerVersion12'.", repo.FeelingsTrackerVersion12.SelfInfo, new RecordItemIndex(0));
-            Host.Current.KillApplication(repo.FeelingsTrackerVersion12.Self);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site URL in variable $'0' with browser 'chrome' in normal mode .", new RecordItemIndex(0));
+            Host.Current.OpenBrowser(testUrl, "chrome", "", false, false, false, false, false, true);
             Delay.Milliseconds(0);
+            
+            // watching the env var value
+            Report.Log(ReportLevel.Info, "User", testUrl, new RecordItemIndex(1));
             
         }
 

@@ -1,7 +1,8 @@
-﻿<repository
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
 id="4634972d-89b0-4638-a273-a9d2880d20de"
 name="feelingTrackerRanorexTestRepository"
-rxversion="8.2">
+rxversion="8.3">
 	<codegen
 	classname="feelingTrackerRanorexTestRepository"
 	namespace="feelingTrackerRanorexTest">
