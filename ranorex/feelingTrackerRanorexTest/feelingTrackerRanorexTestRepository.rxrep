@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
+﻿<repository
 id="4634972d-89b0-4638-a273-a9d2880d20de"
 name="feelingTrackerRanorexTestRepository"
 rxversion="8.3">
@@ -20,7 +19,7 @@ rxversion="8.3">
 		id="8873d1a9-a9bc-4256-a175-64db6a019291"
 		isrooted="True"
 		name="FeelingsTrackerVersion12"
-		searchtimeout="30000ms"
+		searchtimeout="10000ms"
 		usecache="False">
 			<item
 			addcaps="unknown,webelement,inputtag"
@@ -28,7 +27,7 @@ rxversion="8.3">
 			id="93a3e91f-8c4f-406f-8d43-1a45254581be"
 			name="TxtUserName"
 			refimgid="56e6ec6d-4fbd-473f-ab04-53ecb86f5f68"
-			searchtimeout="30000ms">
+			searchtimeout="5000ms">
 				/dom[@domain=$testUrl]//input[#'txtUserName'][@visible='true']
 			</item>
 			<item
@@ -37,7 +36,7 @@ rxversion="8.3">
 			id="745df3dc-5e5d-4935-ab70-3d85af2d73f3"
 			name="TxtPassword"
 			refimgid="01b0af1f-d82f-4edc-874c-f1dad23bd570"
-			searchtimeout="30000ms">
+			searchtimeout="5000ms">
 				/dom[@domain=$testUrl]//input[#'txtPassword'][@visible='true']
 			</item>
 			<item
@@ -46,7 +45,7 @@ rxversion="8.3">
 			id="6f28fdc5-620a-4ba8-bb49-cfba0a323f4e"
 			name="Btnlogin"
 			refimgid="40d3ae3b-fdd9-458f-b646-422da2fcdc8e"
-			searchtimeout="30000ms">
+			searchtimeout="5000ms">
 				/dom[@domain=$testUrl]//button[#'btnlogin'][@visible='true']
 			</item>
 			<item
@@ -55,7 +54,7 @@ rxversion="8.3">
 			id="70d5b204-8290-4149-9e1c-b3f879ad7063"
 			name="DivWelcome"
 			refimgid="a08c3835-fe16-47f0-99e8-248220c678b2"
-			searchtimeout="30000ms">
+			searchtimeout="5000ms">
 				/dom[@domain=$testUrl]//div[#'divWelcome'][@visible='true']
 			</item>
 			<basepath>
