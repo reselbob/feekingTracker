@@ -7,30 +7,17 @@ const appRouter = function(app) {
 
     app.get("/ping", function(req, res) {
         let interfaces = [];
-        const ifaces = os.networkInterfaces();
-        Object.keys(ifaces).forEach(function (ifname) {
-            var alias = 0;
-
-            ifaces[ifname].forEach(function (iface) {
-                if ('IPv4' !== iface.family || iface.internal !== false) {
-                    // skip over internal (i.e. 127.0.0.1) and non-ipv4 addresses
-                    return;
-                }
-
-                if (alias >= 1) {
-                    // this single interface has multiple ipv4 addresses
-                    interfaces.push({ifname:ifname + ':' + alias, ipaddress: iface.address})
-                    //console.log(ifname + ':' + alias, iface.address);
-                } else {
-                    // this interface has only one ipv4 adress
-                    interfaces.push({ifname:ifname, ipaddress: iface.address})
-                    //console.log(ifname, iface.address);
-                }
-                ++alias;
-            });
-        });
-        const vers = process.env.CURRENT_VERSION || 'Unknown'
-        res.send(JSON.stringify({APIVersion: vers, createTime: new Date(), interfaces}));
+        let networkInfo;
+        try {
+            networkInfo = require('os').networkInterfaces();
+        } catch (e) {
+            networkInfo = 'UNKNOWN_OR_INACCESSIBLE';
+        }
+        const vers = process.env.CURRENT_VERSION || 'UNDEFINED';
+        const secretMessage = process.env.SECRET_MESSAGE || 'UNKNOWN';
+        const obj = {APIVersion: vers, startTime: new Date().toString(), secretMessage, processId: process.pid, memoryUsage: process.memoryUsage(), networkInfo, createTime: process.env.FT_CREATE_TIME};
+        res.writeHead(200);
+        res.end(JSON.stringify(obj, null, 4));
     });
 
     app.post("/login", function(req, res) {

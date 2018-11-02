@@ -27,6 +27,7 @@ state.initSync();
 
 const port = process.env.FEELING_TRACKER_PORT || 3000;
 
+process.env.FT_CREATE_TIME = new Date().toString();
 const server = app.listen(port, function () {
     console.log('Listening on port %s...', server.address().port);
 });
