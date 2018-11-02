@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
 id="38b5cd2b-943a-424c-a014-07c24ac5d899"
 mode="Desktop"
-rxversion="8.2">
+rxversion="8.3">
 	<name>
-		Recording1
+		SubmitFeeling
 	</name>
 	<repeatcount>
 		1
@@ -23,37 +23,24 @@ rxversion="8.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Recording1"
+	classname="SubmitFeeling"
 	namespace="feelingTrackerRanorexTest">
 	</codegen>
 	<variables>
+		<var
+		id="0059b765-ce92-4957-a79b-e80f40882230"
+		name="testUrl">
+			http://localhost:3000
+		</var>
 	</variables>
 	<recorditems>
-		<openwebsiterecorditem
-		args=""
-		browser="chrome"
-		clearcache="False"
-		clearcookies="False"
-		enabled="True"
-		incognito="False"
-		killexisting="False"
-		maximized="False"
-		optional="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<url>
-				http://localhost:3000
-			</url>
-		</openwebsiterecorditem>
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
+		duration="200ms"
 		enabled="True"
 		loc="116;14"
-		movetime="300ms"
+		movetime="200ms"
 		optional="False"
 		searchpropertyid="834182a9-d9d9-42ea-a208-be261250d866"
 		sx="487"
@@ -278,7 +265,7 @@ UUUUAFFFFABRRRQAUUUUAFFFFABRRRQB/9k=
 			</helperscreenshot>
 		</mouseitem>
 		<keysequenceitem
-		KeySequence="reselbob"
+		KeySequence="reselbob{Escape}"
 		duration="100ms"
 		enabled="True"
 		optional="False"
@@ -500,10 +487,10 @@ ACiiigAooooA/9k=
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
+		duration="200ms"
 		enabled="True"
 		loc="148;12"
-		movetime="300ms"
+		movetime="200ms"
 		optional="False"
 		searchpropertyid="435f4a28-5fdc-4caa-b9c0-bc166e84d39a"
 		sx="511"
@@ -933,10 +920,10 @@ ACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
 		<mouseitem
 		action="Click"
 		button="Left"
-		duration="500ms"
+		duration="200ms"
 		enabled="True"
 		loc="32;16"
-		movetime="300ms"
+		movetime="200ms"
 		optional="False"
 		searchpropertyid="17feaf0b-8a61-4220-acf2-4c27e585edee"
 		sx="318"
@@ -1369,30 +1356,12 @@ KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//
 				Welcome reselbob
 			</matchvalue>
 		</validationitem>
-		<closeapprecorditem
-		enabled="True"
-		graceperiod="0ms"
-		method="CloseWindow"
-		optional="False"
-		searchpropertyid="5fb173df-e288-4c8e-b447-3e189f1c5f89">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="8873d1a9-a9bc-4256-a175-64db6a019291"
-			sourcename="ItemRecorderEditor">
-				<path>
-					/dom[@domain='localhost:3000']
-				</path>
-			</info>
-		</closeapprecorditem>
 	</recorditems>
 	<repository
 	id="4634972d-89b0-4638-a273-a9d2880d20de"
 	name="feelingTrackerRanorexTestRepository"
 	relativepath="feelingTrackerRanorexTestRepository.rxrep"
-	rxversion="8.2">
+	rxversion="8.3">
 		<codegen
 		classname="feelingTrackerRanorexTestRepository"
 		namespace="feelingTrackerRanorexTest">
@@ -1404,7 +1373,7 @@ KKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Recording1.UserCode.cs
+		SubmitFeeling.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

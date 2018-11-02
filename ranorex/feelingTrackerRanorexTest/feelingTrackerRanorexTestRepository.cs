@@ -22,7 +22,7 @@ namespace feelingTrackerRanorexTest
     /// <summary>
     /// The class representing the feelingTrackerRanorexTestRepository element repository.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
     [RepositoryFolder("e8846197-c75c-4087-b572-9608fef3bcf7")]
     public partial class feelingTrackerRanorexTestRepository : RepoGenBaseFolder
     {
@@ -48,6 +48,18 @@ namespace feelingTrackerRanorexTest
         }
 
 #region Variables
+
+        string _testUrl = "http://localhost:3000";
+
+        /// <summary>
+        /// Gets or sets the value of variable testUrl.
+        /// </summary>
+        [TestVariable("084f8e2f-9a4b-45dc-a6b4-838265e66b97")]
+        public string testUrl
+        {
+            get { return _testUrl; }
+            set { _testUrl = value; }
+        }
 
 #endregion
 
@@ -76,7 +88,7 @@ namespace feelingTrackerRanorexTest
     /// <summary>
     /// Inner folder classes.
     /// </summary>
-    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.2")]
+    [System.CodeDom.Compiler.GeneratedCode("Ranorex", "8.3")]
     public partial class feelingTrackerRanorexTestRepositoryFolders
     {
         /// <summary>
@@ -94,12 +106,12 @@ namespace feelingTrackerRanorexTest
             /// Creates a new FeelingsTrackerVersion12  folder.
             /// </summary>
             public FeelingsTrackerVersion12AppFolder(RepoGenBaseFolder parentFolder) :
-                    base("FeelingsTrackerVersion12", "/dom[@domain='localhost:3000']", parentFolder, 30000, null, false, "8873d1a9-a9bc-4256-a175-64db6a019291", "")
+                    base("FeelingsTrackerVersion12", "/dom[@domain=$testUrl]", parentFolder, 10000, null, false, "8873d1a9-a9bc-4256-a175-64db6a019291", "")
             {
-                _txtusernameInfo = new RepoItemInfo(this, "TxtUserName", ".//input[#'txtUserName'][@visible='true']", 30000, null, "93a3e91f-8c4f-406f-8d43-1a45254581be");
-                _txtpasswordInfo = new RepoItemInfo(this, "TxtPassword", ".//input[#'txtPassword'][@visible='true']", 30000, null, "745df3dc-5e5d-4935-ab70-3d85af2d73f3");
-                _btnloginInfo = new RepoItemInfo(this, "Btnlogin", ".//button[#'btnlogin'][@visible='true']", 30000, null, "6f28fdc5-620a-4ba8-bb49-cfba0a323f4e");
-                _divwelcomeInfo = new RepoItemInfo(this, "DivWelcome", ".//div[#'divWelcome'][@visible='true']", 30000, null, "70d5b204-8290-4149-9e1c-b3f879ad7063");
+                _txtusernameInfo = new RepoItemInfo(this, "TxtUserName", ".//input[#'txtUserName'][@visible='true']", 5000, null, "93a3e91f-8c4f-406f-8d43-1a45254581be");
+                _txtpasswordInfo = new RepoItemInfo(this, "TxtPassword", ".//input[#'txtPassword'][@visible='true']", 5000, null, "745df3dc-5e5d-4935-ab70-3d85af2d73f3");
+                _btnloginInfo = new RepoItemInfo(this, "Btnlogin", ".//button[#'btnlogin'][@visible='true']", 5000, null, "6f28fdc5-620a-4ba8-bb49-cfba0a323f4e");
+                _divwelcomeInfo = new RepoItemInfo(this, "DivWelcome", ".//div[#'divWelcome'][@visible='true']", 5000, null, "70d5b204-8290-4149-9e1c-b3f879ad7063");
             }
 
             /// <summary>
